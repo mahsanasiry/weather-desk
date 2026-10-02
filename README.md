@@ -1,3 +1,4 @@
+
 # Weather Desk: a weather dashboard in Next.js and TypeScript
 
 Search any city and see the current conditions, an hourly temperature chart and a 7-day forecast.
@@ -38,7 +39,7 @@ The static site is created in the `out` folder.
 1. Push this repository to GitHub.
 2. Go to **Settings > Pages** and set **Source** to **GitHub Actions**.
 3. Every push to `main` runs `.github/workflows/deploy.yml` and publishes the site at
-   `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+   `https://mahsanasiry.github.io/weather-desk/`.
 
 ## Project structure
 
