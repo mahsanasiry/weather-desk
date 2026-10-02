@@ -39,7 +39,7 @@ The static site is created in the `out` folder.
 1. Push this repository to GitHub.
 2. Go to **Settings > Pages** and set **Source** to **GitHub Actions**.
 3. Every push to `main` runs `.github/workflows/deploy.yml` and publishes the site at
-   `https://mahsanasiry.github.io/weather-desk/`.
+   `http://mahsanasiry.github.io/weather-desk/`.
 
 ## Project structure
 
