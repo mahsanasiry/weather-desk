@@ -1,61 +1,51 @@
+# Weather Desk
 
-# Weather Desk: a weather dashboard in Next.js and TypeScript
+> A clean and responsive weather dashboard powered by live weather data.
 
-Search any city and see the current conditions, an hourly temperature chart and a 7-day forecast.
-Built with **Next.js 14**, **TypeScript** and **Tailwind CSS**, exported as a static site.
-It uses the free [Open-Meteo](https://open-meteo.com/) API: no API key and no backend.
+Weather Desk is a responsive weather dashboard that provides current conditions, hourly temperatures and a 7-day forecast using the Open-Meteo API.
+
+🌐 **Live Demo:** https://mahsanasiry.github.io/weather-desk/
 
 ## Features
 
-- City search with live suggestions (debounced, keyboard accessible combobox)
-- Current conditions: temperature, feels like, humidity, wind, rain, sunrise and sunset
-- Hourly temperature chart drawn with plain SVG (no chart library), with chance-of-rain bars,
-  a 24 / 48 / 72 hour range filter, and a readout that follows the mouse, touch or arrow keys
-- 7-day forecast with a temperature range bar for each day
-- Celsius and Fahrenheit toggle (the API converts the units)
-- Save favorite cities; settings are kept in the browser
-- Loading skeletons, friendly error messages with a "Try again" button
-- Cancels outdated requests (`AbortController`) so a slow response never replaces a newer one
+- Search weather by location
+- Current weather conditions
+- Hourly temperature forecast
+- 7-day weather forecast
+- Weather condition icons
+- Responsive layout
+- Loading and error states
+- Clean and accessible interface
 
-## Run locally
+## Tech Stack
 
-```bash
-npm install
-npm run dev
-```
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Open-Meteo API
+- GitHub Actions
+- GitHub Pages
 
-Open http://localhost:3000.
+## Project Highlights
 
-## Build
+Weather Desk was built as a practical front-end project with a focus on:
 
-```bash
-npm run build
-```
+- API integration
+- Type-safe development with TypeScript
+- Reusable React components
+- Responsive design
+- Loading and error handling
+- Accessible user interfaces
+- Clean and maintainable code
+- Static deployment with GitHub Actions
 
-The static site is created in the `out` folder.
+## API
 
-## Deploy to GitHub Pages
+Weather data is provided by the Open-Meteo API.
 
-1. Push this repository to GitHub.
-2. Go to **Settings > Pages** and set **Source** to **GitHub Actions**.
-3. Every push to `main` runs `.github/workflows/deploy.yml` and publishes the site at
-   `https://mahsanasiry.github.io/weather-desk/`.
+https://open-meteo.com/
 
-## Project structure
+## Source Code
 
-```
-src/
-  app/          layout, page, global styles
-  components/   Dashboard, SearchBox, CurrentCard, HourlyChart, DailyForecast, ...
-  lib/
-    api.ts      requests to Open-Meteo (geocoding and forecast) with error handling
-    types.ts    TypeScript types for the API data
-    weather.ts  weather codes to text and icons
-    format.ts   time and unit formatting
-    storage.ts  saving settings in localStorage
-```
-
-## Data
-
-Weather data by [Open-Meteo.com](https://open-meteo.com/), licensed under CC BY 4.0.
-Open-Meteo is free for non-commercial use.
+https://github.com/mahsanasiry/weather-desk
